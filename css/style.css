@@ -1,0 +1,21 @@
+
+
+.blue {
+  background-color: #0081EA;
+}
+.red {
+  background-color: #EA000B; 
+}
+.green {
+  background-color: #068400;
+}
+.purple {
+  background-color: #800080;
+}
+.orange{
+  background-color: orange;
+}
+
+.heightP{
+  height: 15vh;
+}

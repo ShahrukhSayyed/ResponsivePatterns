@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Responsive Patterns</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/starter-template.css" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Responsive Patterns </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#FluidContainer">Mostly Fluid</a></li>
+            <li><a href="#ColumnDrop">Column Drop</a></li>
+            <li><a href="#LayoutShifter">Layout Shifter</a></li>
+            <li><a href="#OffCanvas">Off Canvas</a></li>
+       
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="starter-template">
+      <div class="container" id="FluidContainer">
+
+      <h3>Mostly Fluid </h3>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+          	<p>
+          		The mostly fluid pattern consists primarily of a fluid grid. On large or medium screens, it usually remains the same size, simply adjusting the margins on wider screens.
+          		<br/>
+          		On smaller screens, the fluid grid causes the main content to reflow, while columns are stacked vertically. One major advantage of this pattern is that it usually only requires one breakpoint between small screens and large screens.
+          	</p>
+          </div>
+          
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          	<img src="./images/mostly-fluid.svg">
+          </div>
+	
+	      <div>
+		      <a href="./FluidContainer.html" type="button" class="btn btn-info" role="button">Have a look </a>
+	      </div>
+
+        </div>
+
+      </div><!-- /.container -->
+
+
+      <hr/>
+      <br/>
+      <div class="container" id="ColumnDrop">
+      <h3 > Column Drop </h3>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          		<p>For full-width multi-column layouts, column drop simply stacks the columns vertically as the window width becomes too narrow for the content.
+          			<br/>
+					Eventually this results in all of the columns being stacked vertically. Choosing breakpoints for this layout pattern is dependent on the content and changes for each design.
+          		</p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          	<img src="./images/column-drop.svg">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+		    <a href="./ColumnDrop.html" type="button" class="btn btn-info" role="button">Have a look </a>
+	    </div>
+      </div><!-- /.container -->
+
+      <hr/>
+      <br/>
+      <div class="container" id="LayoutShifter">
+      <h3> Layout Shifter </h3>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          	<p>
+				The layout shifter pattern is the most responsive pattern, with multiple breakpoints across several screen widths.
+					<br/>
+				Key to this layout is the way content moves about, instead of reflowing and dropping below other columns. Due to the significant differences between each major breakpoint, it is more complex to maintain and likely involves changes within elements, not just overall content layout.  
+			</p>
+          </div>
+          
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          	<img src="./images/layout-shifter.svg">
+          </div>
+        </div>
+
+        <br/>
+        <div class="row">
+		    <a href="./LayoutShifter.html" type="button" class="btn btn-info" role="button">Have a look </a>
+	    </div>
+
+      </div><!-- /.container -->
+
+
+      <hr/>
+      <br/>
+      <div class="container" id="OffCanvas">
+      <h3> Off Canvas </h3>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          	<p>
+          		Rather than stacking content vertically, the off canvas pattern places less frequently used content—perhaps navigation or app menus—off screen, only showing it when the screen size is large enough, and on smaller screens, content is only a click away.
+          	</p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          	<img src="./images/off-canvas.svg">
+          </div>
+        </div>
+
+        <br/>
+        <div class="row">
+		    <a href="./OffCanvas.html" type="button" class="btn btn-info" role="button">Have a look </a>
+	    </div>
+
+      </div><!-- /.container -->
+
+
+
+    </div><!-- /.starter-template -->  
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
